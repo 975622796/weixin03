@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import SearchHotspot from '@/components/search_hotspot'
+import SearchHotspot from '@/components/searchhotspot'
 export default {
   components: {
     SearchHotspot
