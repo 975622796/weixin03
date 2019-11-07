@@ -3,7 +3,6 @@
     <!-- 头部搜索 -->
     <SearchHotspot />
     <div class="main">
-
       <div class="left">
 
       </div>
@@ -27,8 +26,18 @@ export default {
     SearchHotspot
   },
   onLoad () {
-     this.get
-  }
+    this.getCategories()
+  },
+  methods: {
+    getCategories () {
+     this.$request () ({
+        url:'/api/public/v1/categories'
+     }).then(data=>{
+        console.log(data)
+        this.categories=data
+     })
+    }
+  },
 }
 </script>
 
