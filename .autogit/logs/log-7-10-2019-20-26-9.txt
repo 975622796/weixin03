@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Thu Nov 07 2019 20:26:09 GMT+0800 (中国标准时间)
+------------------------------------------------------
+
+Modified files:
+* src/pages/category/index.vue
+
+
+Created files:
+* .autogit/logs/log-7-10-2019-19-56-5.txt
+* static/images/cart_border@2x.png
+* static/images/titleImage.png
+
+
+Deleted files:
+
+
+Renamed files:

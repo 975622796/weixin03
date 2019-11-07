@@ -14,12 +14,19 @@
       <div class="right" v-if="isInit">
         <img src="../../../static/images/titleImage.png" alt="">
         <ul>
-          <li class="cate2" v-for="cate2 in categories[activeIndex].children"></li>
+          <li class="cate2" v-for="cate2 in categories[activeIndex].children" :key="cate2.cat_id">
+             <p class="title">/<span>{{cate2.cat_name}}</span>/</p>
+             <ul>
+                <li class="cate3" v-for="(cate3, index3) in cate2.children" :key="cate3.cat_id" @click="toList(cate3.cat_name)">
+                 <img :src="cate3.cat_icon" alt="">
+                 <p>{{cate3.cat_name}}</p>
+                </li>
+             </ul>
+          </li>
         </ul>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
